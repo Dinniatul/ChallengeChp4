@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Binar Car Rental </title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <a href ="http://localhost:8000/"><img class="img-fluid" src="images/logo.png" style="width: 100px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse offcanvas offcanvas-end" data-bs-scroll="true" id="offcanvasWithBothOptions" tabindex="-1" id="navbarNav">
+        <div class="offcanvas-header w-100 align-items-center">
+          <h2 class="mb-0">BCR</h2>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="#our-service">Our Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#why-us">Why Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#testimonial">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#faq">FAQ</a>
+          </li>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Register</button>
+          </form>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <!-- Header -->
+  <header class="masthead text-dark " style="background-color: #f1f3ff">
+    <div class="container">
+      <br /><br />
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h1>Sewa & Rental Mobil Terbaik di Kawasan Padang</h1>
+          <p>
+            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+          </p>
+         
+        </div>
+        <div class="col-md-6">
+          <img class="mobil" src="images/img_car.png" width="662" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /Header -->
+
+  <!-- search -->
+  <section id="search">
+    <div class="container px-lg-5">
+      <div class="row">
+        <div class="d-lg-flex py-3 rounded-3 shadow bg-white">
+                <div class="col">
+                    <label class="label">Tipe Driver</label>
+                    <select class="form-style" > 
+                      <option hidden class="tipe-driver">Pilih Tipe Driver</option>
+                      <option>Dengan Sopir</option>
+                      <option>Tanpa Sopir Lepas kunci</option>
+                    </select>
+                </div>
+                <div class="col ">
+                  <label class="label">Tanggal</label>
+                  <div class="input-group">
+                    <input type="date" class="form-style" placeholder="Pilih Tanggal" id="input-tanggal"/>
+                  </div>
+                </div>
+                <div class="col ">
+                  <label class="label" >Waktu Jemput/Ambil</label>
+                  <input type="time" class="form-style" id="input-waktu">
+                </div>
+                <div class="col ">
+                  <label class="label">Jumlah Penumpang/Opsional</label>
+                  <input type="text" class="form-style" placeholder="Jumlah Penumpang" id="input-penumpang">
+                  <span class="icon"><i class="bi bi-people"></i></span>
+                  
+                </div>
+                <div>
+                  <div class="col">
+                      <button type="button" style="height: 5;" class="btn btn-success my-4 " id="cari-btn" > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>Cari </button>
+                      <button type="button" class="btn btn-success my-4  " id="hapus-btn" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                      </svg>Hapus </button>
+                  </div>
+                </div>
+        </div>
+      </div>    
+    </div>
+    
+        <div class="container mt-5 col-md-9">
+            <div id="cars-container" class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 g-3"></div>
+        </div>
+  </section>
+  <div class="container mt-5 col-md-9">
+    <div id="cars-container" class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 g-3"></div>
+   </div>
+  <!-- /seaarch  -->
+  
+  <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <p class="content">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+            <p class="content">binarcarrental@gmail.com</p>
+            <p class="content">081374821410</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 grid-coloum">
+            <!-- Links -->
+            <p>
+              <a href="#our-service" class="text-reset">Our Service</a>
+            </p>
+            <p>
+              <a href="#why-us" class="text-reset">Why Us</a>
+            </p>
+            <p>
+              <a href="#testimonial" class="text-reset">Testimonial</a>
+            </p>
+            <p>
+              <a href="#faq" class="text-reset">FAQ</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <p class="content">Connect with us</p>
+            <img class="img-ft" src="images/icon_facebook.jpg" />
+            <img class="img-ft mx-1" src="images/icon_instagram.png" />
+            <img class="img-ft mx-1" src="images/icon_twitter.jpg" />
+            <img class="img-ft mx-1" src="images/icon_mail.jpg" />
+            <img class="img-ft mx-1" src="images/icon_twitch.jpg" />
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="mb-4"> Copyright Binar 2022</h6>
+            <img class="img-ft " src="images/Rectangle.png" />
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./scripts/binar.js"></script>
+<script type="text/javascript" src="./scripts/app.js"></script>
+<script type="text/javascript" src="./scripts/car.js"></script>
+<script type="text/javascript" src="./scripts/main.js"></script>
+</body>
+</html>

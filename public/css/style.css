@@ -1,0 +1,215 @@
+:root {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+.navbar {
+  background-color: #f1f3ff;
+  position: fixed;
+  width: 100%;
+}
+body {
+  font-family: Helvetica;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.paragraph {
+  width: 150%;
+}
+
+p.testimonial-name {
+  font-weight: bold;
+}
+
+.bg-aliceblue {
+  background-color: #f1f3ff;
+}
+
+.testimonial-rating {
+  max-height: 16px;
+}
+.testimonial-media:hover {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.testimonial-media {
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 780px) {
+  .hero-desc.container-md {
+    padding-top: 40px;
+  }
+  img.mobil {
+    width: 100%;
+  }
+  img.img-service {
+    width: 75%;
+  }
+
+  img.testimonial-rating {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .faq-sec {
+    margin-bottom: auto;
+  }
+
+  h1.why-us {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  p.text-ws {
+    text-align: center;
+  }
+  .slide {
+    max-width: 6%;
+  }
+  p.testimonial-text {
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .accordion {
+    max-width: 100%;
+    width: 100%;
+  }
+  .accordion-item {
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #d4d4d4;
+  }
+
+  h5.mt-2 {
+    text-align: center;
+    font-size: 14 px;
+  }
+
+  p.content {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .grid-coloum {
+    text-align: left;
+  }
+
+  img.img-ft {
+    float: left;
+  }
+
+  a.text-reset {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  h6.mb-4 {
+    text-align: left;
+  }
+
+  .collapse.navbar-collapse.offcanvas.offcanvas-end.show {
+    width: 50%;
+  }
+  .navbar-nav.ms-auto.mx-3 {
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  ul.navbar-nav {
+    width: 93%;
+  }
+
+  .col-6.text-center {
+    width: 100%;
+  }
+  .col-6.mt-5 {
+    width: 100%;
+  }
+  img.testimonial-img {
+    margin-bottom: 20px !important;
+  }
+
+  .carousel-item {
+    border-radius: 10px;
+  }
+
+  #carouselExampleControls {
+    max-width: 100% !important;
+  }
+}
+
+#search {
+  margin-top: -3em;
+  position: relative;
+  z-index: 6;
+  border-radius: 8px;
+  width: auto;
+  padding: 0%;
+  max-width: none;
+}
+
+.form-style {
+  width: 95%;
+}
+
+#cari-btn,
+#hapus-btn {
+  background: #5cb85f;
+  border-radius: 2px;
+  padding: 6px 8px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+
+.btn_custom:hover {
+  background: white;
+}
+
+.label {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#input-tanggal,
+#input-penumpang,
+#input-waktu,
+.tipe-driver {
+  font-family: "Rubik";
+}
+
+.card-body {
+  background: #ffffff;
+  font-family: "Rubik";
+  font-style: normal;
+  color: black;
+  min-height: 34rem;
+}
+
+.button-global {
+  background: #5cb85f;
+}
