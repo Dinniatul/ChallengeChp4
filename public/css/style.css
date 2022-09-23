@@ -166,7 +166,11 @@ p.testimonial-name {
 }
 
 .form-style {
+  display: flex;
+  flex-direction: row;
   width: 95%;
+  padding: 6px 8px;
+  gap: 8px;
 }
 
 #cari-btn,
@@ -199,7 +203,11 @@ p.testimonial-name {
 #input-penumpang,
 #input-waktu,
 .tipe-driver {
-  font-family: "Rubik";
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .card-body {
