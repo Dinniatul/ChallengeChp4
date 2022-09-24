@@ -1,22 +1,20 @@
 const http = require("http");
 const fs = require("fs");
-
 const port = 8000;
 
 function onRequest(req, res) {
   switch (req.url) {
-    case "/":
+    case "/": //saat membuka localhost:8000 , maka akan munucl halaman landing page dari index.html
       res.writeHead(200);
       req.url = "index.html";
       break;
-    case "/cars":
+    case "/cars": //saat membuka localhost:8000/cars , maka akan muncul halaman page cariMobil.html
       res.writeHead(200);
-      req.url = "cariMobil.html"; // mengambil page dari cariMobil.html
+      req.url = "cariMobil.html";
       break;
   }
 
-  //mengambil file path yang ada di public
-  let path = "public/" + req.url;
+  let path = "public/" + req.url; //mengambil data yang ada di public untuk menngirimkan images dll
   fs.readFile(path, (err, data) => {
     res.writeHead(200);
     res.end(data);
@@ -25,5 +23,5 @@ function onRequest(req, res) {
 const server = http.createServer(onRequest);
 
 server.listen(port, "localhost", () => {
-  console.log("Server Sudah Berjalan , Silahkan dibuka ");
+  console.log("Server Sudah Berjalan, silahkan buka localhost:8000");
 });
